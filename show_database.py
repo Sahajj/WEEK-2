@@ -5,14 +5,15 @@ import mysql.connector
 mydb = mysql.connector.connect(
     host = "localhost",
     user = "sahaj",
-    password = "1234"
+    password = "1234",
+    database = "week2"
 )
 
 # initalizing mydbcursor to execute mysql commands
 mydbcursor = mydb.cursor()
 
 # Show data base 
-mydbcursor.execute("SHOW DATABASES;")
+mydbcursor.execute("SELECT * FROM Hospital")
 
 for x in mydbcursor:
     print(x)

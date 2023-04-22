@@ -12,4 +12,4 @@ mydb = mysql.connector.connect(
 mydbcursor = mydb.cursor()
 
 # Creating data base 
-mydbcursor.execute("CREATE DATABASE my_info")
+mydbcursor.execute("CREATE DATABASE week2")
